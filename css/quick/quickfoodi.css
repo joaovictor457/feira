@@ -1,0 +1,161 @@
+@font-face {
+     font-family: "qanelas";
+     src: url('../fontes/qanelas-bold.otf');
+}
+@font-face {
+     font-family: "opensansregular";
+     src: url('../fontes/OpenSansRegular.ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+
+/*CARRINHO*/
+
+.meu_c {
+    padding: 0vw 5vw 0vw 1vw;
+}
+
+#nome {
+	font-family: "OpenSansRegular";
+	position: absolute;
+    top: 70px;
+    left: 105px;
+}
+
+#quantidade {
+	color: gray;
+	font-family: "OpenSansRegular";
+    position: absolute;
+    top: 75px;
+    left: 103px;
+}
+
+#valor_unidade {
+	font-family: "OpenSansRegular";
+    position: absolute;
+    left: 380px;
+    top: 70px;
+}
+
+hr {
+	margin-top: -0.1em;
+	opacity: 0.4;
+}
+
+tr {
+    border: 2px solid #000;
+}
+
+#seta_carrinho {
+    width: 3.5vw;
+    height: 3vw;
+    margin-top: -1.5vw;
+    display: none;
+    float: right;
+}
+
+.carrinho {
+	box-shadow: 1px 2px 11px 2px rgba(0,0,0,0.5);
+    position: absolute;
+    width: 30em;
+    height: auto;
+    background: rgb(242, 242, 242);
+    margin-left: 50.4vw;
+    margin-top: -132.5vw;
+    visibility: visible;
+    border-radius: 5px;
+}
+
+#compras {
+	background-color: #fff;
+    visibility: visible;
+    border-radius: 5px;
+}
+
+.carrinho #p_cesta, #meu_c {
+	color: black;
+	font-size: 1.4em;
+	font-family: "qanelas";
+}
+
+.carrinho #p_preço {
+	color: black;
+	font-size: 1.2em;
+	font-family: Arial;
+	margin-left: 13.5em;
+}
+
+.carrinho button {
+    cursor: pointer;
+	width: 15em;
+	height: 2.5em;
+	color: white;
+	background-color: red;
+	border: none;
+    float: right;
+	margin: 1vw 2.5vw 1vw 0vw;
+}
+
+.carrinho button a {
+	color: #fff;
+	text-decoration: none;
+}
+#botao_fechar {
+    width: 2vw;
+    height: 1.5vw;
+    margin: 1vw -1vw 0vw 0vw;
+    border-radius: 0.2vw;
+}
+.descriçao {
+    font-family: "qanelas";
+    width: 32vw;
+    height: auto;
+    padding: 1vw;
+    margin-left: 1vw;
+}
+.descriçao .nomepro {
+	width: 15vw;
+    margin-left: 1vw;
+    font-size: 1.3vw;
+}
+
+.des {
+	height: 2vw;
+}
+
+.valor_unidade {
+    margin-left: 18vw;
+    margin-top: -1.5vw;
+}
+
+.remover {
+    color: #f00;
+    margin-left: 23vw;
+    margin-top: -1.3vw;
+}
+
+.premover {
+    width: 5vw;
+    margin-top: -1.5vw;
+}
+
+#recebendo_valores {
+	width: 5em;
+	height: 1.5em;
+	margin-left: 19.5em;
+	margin-top: -1.5em;
+}
+
+#p_cesta {
+    position: absolute;
+    margin-left: 1.5em;
+    margin-top: 25px;
+    border-bottom: solid 1px #000;
+}
+
+@media screen and (min-width: 1440px) {
+	.carrinho {
+	}
+}

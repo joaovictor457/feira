@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+@font-face {
+     font-family: "qanelas";
+     src: url('../../fontes/qanelas-bold.otf');
+}
+
+@font-face { 
+     font-family: "opensansregular";
+     src: url('../../fontes/OpenSansRegular.ttf');
+}
+
+
+	/*CONFIGURACOES CABECALHO*/
+	#cabeçalho_menu{
+		background-image: url(../../img/fundo.png);
+		background-size: 100%;
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		width: 100%;
+		height: 29.18vw;
+		font-family: "qanelas";
+	    text-align: center;
+	}
+	
+	/*MENU*/
+	.menu_op {
+		text-decoration: none;
+		font-size: 1.2vw;
+		color: black;
+		margin-top: 6vw;
+		height: 2vw;
+	}
+	.menu {
+		display: flex;
+		place-content: space-evenly;
+	}
+	#logo_cabeçalho {
+		height: 10vw;
+	}
+	.img-logo {
+		margin-top: 2vw;
+	}
+	/*LOGO DA FEIRA*/
+	#logofeira {
+		width: 40vw;
+		margin: -2vw 0vw 0vw 5vw;
+	}
+	
+	/*BARRA DE DIVISAO*/
+	#barra {
+		width: 100%;
+	}
+
+	#barradiv {
+		height: 0.9vw;
+	}
+
+@media screen and (max-width: 800px) {
+	#inicio, #patro, #rs, #sobre {
+		display: none;
+	}
+	.menu_op {
+		font-size: 3vw;
+		margin-top: 10vw;
+	}
+	#logo_cabeçalho {
+		width: 22vw;
+		height: 22vw;
+	}
+	#cabeçalho_menu {
+		height: 60vw;
+		background-size: 120%;
+	}
+	#logofeira {
+		width: 75vw;
+	}
+	#barradiv {
+		height: 1.5vw;
+		margin-top: -1vw
+	}
+	#barra {
+		height: 100%;
+	}
+
+}

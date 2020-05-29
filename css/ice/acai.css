@@ -1,0 +1,187 @@
+@font-face {
+     font-family: "qanelas";
+     src: url('../fontes/qanelas-bold.otf');
+}
+
+.front img {
+	width: 15vw;
+    height: 22vw;
+}
+
+/*TITULOS*/
+#titulo {
+	margin-top: 3vw;
+	width: 20vw;
+}
+.titulo {
+	text-align: center;
+}
+
+#tigela {
+    width: 15%;
+}
+.tigela {
+	text-align: center;
+	margin: 1vw 0vw 7vw 0vw;
+}
+#barcas {
+	width: 20vw;
+}
+.barcas {
+	text-align: center;
+	margin: -4vw 0vw 7vw 0vw;
+}
+
+/*PRODUTOS*/
+
+/*CONFIGURACOES DOS CARDS*/
+.primeira, .segunda, .terceira {
+	display: inline-flex;
+    background-image: url(../../img/Açaí/faixav.png);
+    background-size: 100%;
+	background-repeat: no-repeat;
+    height: 25vw;
+    width: 100%;
+    margin-top: -5vw;
+}
+
+#card1, #card2, #card3, #card4,#barca1, #barca2, #barca3, #barca4 {
+	margin: 12vw -8vw 0vw 15.5vw;
+}
+#card5, #card6, #card7 {
+	margin: 12vw -10vw 0vw 22vw;
+}
+
+.card {
+	font-family: "OpenSansRegular";
+	transform: translate(-50%, -50%);
+	width: 15vw;
+	height: 22vw;
+	transform-style: preserve-3d;
+	perspective: 55vw;
+	transition: 0.5s;
+}
+
+.card .front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #901d78;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: 0.5s;
+}
+
+.card:hover .front {
+	transform: rotateX(-180deg);	
+}
+
+.card .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #aa2378;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 0.5s;
+}
+
+.card .back:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover .back {
+	transform: rotateX(0deg);	
+}
+
+.card .back .details {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 1.5vw;
+	box-sizing: border-box;
+}
+
+.card .back .details h2 {
+	margin: -0.8px;
+	padding: 0;
+	color: #fff;
+}
+
+.card .back .details h2 span {
+	color: #a7a7a7;
+	font-size: 1.1vw;
+}
+
+.social-icons {
+	padding: 1vw 0;
+}
+
+.social-icons a {
+	cursor: pointer;
+	display: inline-block;
+	width: 13.5vw;
+	height: 7vw;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin-left: -0.7vw;
+	transition: 0.5s;
+}
+
+.social-icons a .fa {
+	line-height: 36px;
+}
+
+.social-icons a:hover {
+	background: #b34b9d;
+}
+
+.btn {
+	background: linear-gradient(90deg, #7ebd0e, #fdfdfe, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border:none;
+	height: 40px;
+	outline: none;
+	color: #631d54;
+	font-size: 15px;
+	font-family: "qanelas";
+	cursor:pointer;
+	border-radius: 10px;
+	z-index: -1;
+	padding: 0 20px;
+}
+.comprar{
+	text-decoration: none;
+	color: #631d54;
+}
+
+@media screen and (min-width: 1440px) {
+	#titulo {
+	}
+	#tigela {
+	}
+	#card1, #card2, #card3, #card4 {
+	}
+	#card5, #card6, #card7 {
+	}
+	#faixa1 {
+	}
+	#barca1, #barca2, #barca3, #barca4 {	
+	}
+	#barcas {
+	}
+}

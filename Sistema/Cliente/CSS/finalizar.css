@@ -1,0 +1,126 @@
+@font-face {
+     font-family: "qanelas";
+     src: url('../fontes/qanelas-bold.otf');
+}
+
+@font-face { 
+     font-family: "opensansregular";
+     src: url('../fontes/OpenSansRegular.ttf');
+}
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	height: 100%;
+    width: 100%;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.all {
+	padding: calc(5% + 0vw) 32%;
+}
+.con{
+    width: auto;
+    height: auto;
+    padding: 4vw 10vw;
+	box-sizing: border-box;
+	background: #fff;
+	border: 1px solid #000;
+	border-color: rgba(0,0,0,0.5);
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.5);
+	font-family: "qanelas";
+}
+#pedido{
+	color: #000;
+	text-align: center;
+	font-family: "qanelas";
+	font-size: 2.5vw;
+}
+.form {
+	margin-top: 1vw;
+	text-align: center;
+}
+#nome {
+    text-align: center;
+    color: #93938F;
+    margin-top: 1vw;
+    font-size: 1.7vw;
+}
+#descricao{
+    padding: 0px;
+    font-weight: bold;
+    font-size: 1.7vw;
+    color: #000;
+    text-align: center;
+    height: auto;
+}
+#preco {
+	font-size: 1.3vw;
+    text-align: center;
+    margin-top: 3vw;
+}
+#confirmar{
+	position: relative;
+	background: #901d78;
+	border:none;
+	height: 40px;
+	width: 260px;
+	outline: none;
+	color: #ffffff;
+	font-size: 15px;
+	cursor:pointer;
+	border-radius: 20px;
+	z-index: -1;
+	margin-bottom: -200px;
+	margin-left: 75px;
+}
+.btn {
+	position: fixed;
+	width: 2vw;
+	height: 1.5vw;
+	background-color: #aabbcc;
+	top: 0;
+	left: 0; 
+}
+.confirmar {
+	cursor: pointer;
+	text-decoration: none;
+	color: #fff;
+	display: inline-block;
+	padding: 15px 20px;
+	border: 1px solid #fff;
+	border-radius: 5px;
+	margin: 2vw 0 1vw 0;
+}
+.confirmar:hover {
+	
+	color: #fff;
+	box-shadow: 0 2px 3px #777;
+}
+.cancelar {
+	cursor: pointer;
+	border: none;
+	background-color: #fff;
+	color: red;
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 800px) {
+	body {
+	}
+	.all {
+		padding: calc(15% - 0vw) 20%;
+	}
+	#pedido {
+		font-size: 30px;
+	}
+	#descricao {
+		font-size: 20px;
+	}
+	#preco {
+		font-size: 15px;
+		margin-top: 5vw;
+	}
+}

@@ -1,0 +1,253 @@
+body {
+	font-family: sans-serif;
+}
+
+@media screen and (min-width: 901px) {
+	.tudo {
+		height: 29.4vw;
+	}
+}
+
+#fornecedores {
+	position: relative;
+    width: 49vw;
+    height: 0vw;
+}
+#fornecedores .box {
+    position: relative;
+    width: 49.5vw;
+    height: 28.8vw;
+    background: #000;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#fornecedores .box:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transform: scaleX(0);
+	opacity: 0;
+	z-index: 1;
+}
+#fornecedores .box:hover:before {
+	transform: scaleX(1);
+	opacity: 1;
+}
+#fornecedores .box:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transform: scaleY(0);
+	opacity: 0;
+	z-index: 1;
+}
+#fornecedores .box:hover:after {
+	transform: scaleY(1);
+	opacity: 1;
+}
+#fornecedores .box .imgBox {
+	position: relative;
+}
+#fornecedores .box .imgBox img {
+	width: 100%;
+	transition: 0.5s;
+}
+#fornecedores .box:hover .imgBox img {
+	opacity: .2;
+	transform: scale(1.2);
+}
+#fornecedores .box .content {
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+#fornecedores .box .content .botao {
+	margin: 0 0 0px;
+	padding: 0;
+	transition: 0.5s;
+	color: #fff;
+	transform: translateY(-50px);
+	opacity: 0;
+	visibility: hidden;
+}
+.botao .a {
+	padding: 15px 40px;
+	border: 3px solid #8bda00;
+	text-decoration: none;
+	margin: 15px;
+	color: #8bda00;
+	border-radius: 50px;
+	font-size: 16px;
+	transition: .3s;
+}
+.botao .a:hover {
+	color: #fff;
+	background: #a9177b;
+	font-weight: bold;
+	font-size: 18px;
+	box-shadow: 0 3px 25px #8bda00;
+	border: #a9177b;
+	border-bottom: 4px solid #8bda00;
+}
+#fornecedores .box:hover .content .botao {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+	transition-delay: 0.2s;
+}
+
+
+
+
+#fornecedores2 {
+	float: right;
+    position: relative;
+    width: 49vw;
+    height: 28.6vw;
+}
+#fornecedores2 .box2 {
+    position: relative;
+    width: 49vw;
+    height: 28.8vw;
+    background: #000;
+    box-sizing: border-box;
+    overflow: hidden;
+    border-radius: 5px;
+}
+#fornecedores2 .box2:before {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-top: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transform: scaleX(0);
+	opacity: 0;
+	z-index: 1;
+}
+#fornecedores2 .box2:hover:before {
+	transform: scaleX(1);
+	opacity: 1;
+}
+#fornecedores2 .box2:after {
+	content: '';
+	position: absolute;
+	top: 10px;
+	left: 10px;
+	right: 10px;
+	bottom: 10px;
+	border-left: 1px solid #fff;
+	border-right: 1px solid #fff;
+	box-sizing: border-box;
+	transition: 0.5s;
+	transform: scaleY(0);
+	opacity: 0;
+	z-index: 1;
+}
+#fornecedores2 .box2:hover:after {
+	transform: scaleY(1);
+	opacity: 1;
+}
+#fornecedores2 .box2 .imgBox2 {
+	position: relative;
+}
+#fornecedores2 .box2 .imgBox2 img {
+	width: 100%;
+	transition: 0.5s;
+}
+#fornecedores2 .box2:hover .imgBox2 img {
+	opacity: .2;
+	transform: scale(1.2);
+}
+#fornecedores2 .box2 .content2 {
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	transform: translateY(-50%);
+	z-index: 2;
+	padding: 20px;
+	box-sizing: border-box;
+	text-align: center;
+}
+#fornecedores2 .box2 .content2 .botao2 {
+	margin: 0 0 0px;
+	padding: 0;
+	color: #fff;
+	transition: 0.5s;
+	transform: translateY(-50px);
+	opacity: 0;
+	visibility: hidden;
+}
+
+#fornecedores2 .box2:hover .content2 .botao2 {
+	opacity: 1;
+	visibility: visible;
+	transform: translateY(0px);
+	transition-delay: 0.2s;
+}
+
+.botao2 .a2 {
+	padding: 15px 40px;
+	border: 3px solid #ffc800;
+	text-decoration: none;
+	margin: 15px;
+	color: #ffc800;
+	border-radius: 50px;
+	font-size: 16px;
+	transition: .3s;
+}
+.botao2 .a2:hover {
+	color: #fff;
+	background: #b92326;
+	font-weight: bold;
+	font-size: 18px;
+	box-shadow: 0 3px 25px #ffc800;
+	border: #a9177b;
+	border-bottom: 4px solid #ffc800;
+}
+
+@media screen and (max-width: 900px) {
+	#tudo {
+		height: 112.5vw;
+		padding-left: 1vw;
+	}
+	#fornecedores, #fornecedores2 {
+		width: 100%;
+		height: 56vw;
+	}
+	#fornecedores .box, #fornecedores2 .box2 {
+	    width: 99%;
+	    height: 55vw;
+	}
+
+	#fornecedores2 {
+    	float: none;
+    }
+
+}
+

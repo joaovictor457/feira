@@ -1,0 +1,41 @@
+body {
+	font-family: sans-serif;
+}
+
+#all {
+	height: 29.4vw;
+}
+/*DIV FORNECEDORES*/
+#fornecedores{
+	margin-top: 0.2vw;
+	display: inline-block;
+	width: 100%;
+}
+
+#fornecedores img{
+	margin-left: 0.01%;
+	width: 49.8%;
+	border-radius: 4px;
+}
+
+#img-quick {
+	float: right;
+}
+a {
+	color: black;
+}
+
+.redes {
+	margin-top: -6vw;
+	position: absolute;
+	border-radius: 1.6vw;
+	width: 4vw;
+}
+
+#insta {
+	margin-left: 45%;
+}
+
+#insta2 {
+	margin-left: 51%;
+}

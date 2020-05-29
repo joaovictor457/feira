@@ -1,0 +1,341 @@
+@font-face {
+     font-family: "qanelas";
+     src: url('../fontes/qanelas-bold.otf');
+}
+
+.front img {
+	width: 15vw;
+	height: 22vw;
+}
+
+/*TITULOS*/
+#titulo {
+    width: 20vw;
+}
+.titulo, .salgados, .bebida {
+	text-align: center;
+	margin-top: 3vw;
+}
+#salgados, #bebida {
+    width: 10vw;
+}
+
+
+/*PRODUTOS*/
+
+/*CONFIGURACOES DOS CARDS*/
+.primeira, .segunda, .terceira, .quarta {
+	display: inline-flex;
+    background-size: 100%;
+	background-repeat: no-repeat;
+    height: 25vw;
+    width: 100%;
+    margin-top: 1vw;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6, #card7, #card8 {
+	margin: 12vw -8vw 0vw 15.5vw;
+}
+
+#bebida1, #bebida2, #bebida3, #bebida4 {
+	margin: 12vw -8vw 0vw 15.5vw;
+}
+
+#bebida5, #bebida6 {
+    margin: 12vw -30.5vw 0vw 38vw;
+}
+
+.card {
+	font-family: "OpenSansRegular";
+	transform: translate(-50%, -50%);
+	width: 15vw;
+	height: 22vw;
+	transform-style: preserve-3d;
+	perspective: 55vw;
+	transition: 0.5s;
+}
+
+.card .front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #831b1c;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: 0.5s;
+}
+
+.card:hover .front {
+	transform: rotateX(-180deg);	
+}
+
+.card .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #831b1c;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 0.5s;
+}
+
+.card .back:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover .back {
+	transform: rotateX(0deg);	
+}
+
+.card .back .details {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 1.5vw;
+	box-sizing: border-box;
+}
+
+.card .back .details h2 {
+	margin: -0.8px;
+	padding: 0;
+	color: #fff;
+}
+
+.card .back .details h2 span {
+	color: #a7a7a7;
+	font-size: 1.1vw;
+}
+
+.social-icons {
+	padding: 1vw 0;
+}
+
+.social-icons a {
+	cursor: pointer;
+	display: inline-block;
+	width: 13.5vw;
+	height: 3.5vw;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	margin-left: -0.7vw;
+	transition: 0.5s;
+}
+
+.social-icons a .fa {
+	line-height: 36px;
+}
+
+.social-icons a:hover {
+	background: #9c2829;
+}
+
+.s-i {
+	color: #fff;
+    padding: 1vw 0 2vw 0;
+}
+
+.btn {
+	background: linear-gradient(90deg, #7ebd0e, #fdfdfe, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border:none;
+	height: 45px;
+	outline: none;
+	color: #540808;
+	font-size: 15px;
+	font-family: "qanelas";
+	cursor:pointer;
+	border-radius: 10px;
+	z-index: -1;
+	padding: 0 20px;
+}
+.comprar{
+	text-decoration: none;
+	color: #631d54;
+}
+/*
+.card {
+	font-family: "OpenSansRegular";
+	position: absolute;
+	transform: translate(-50%, -50%);
+	width: 200px;
+	height: 300px;
+	transform-style: preserve-3d;
+	perspective: 600px;
+	transition: 0.5s;
+}
+
+.card .front {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #831b1c;
+	backface-visibility: hidden;
+	transform: rotateX(0deg);
+	transition: 0.5s;
+}
+
+.card:hover .front {
+	transform: rotateX(-180deg);	
+}
+
+.card .back {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #6b0d0d;
+	backface-visibility: hidden;
+	transform: rotateX(180deg);
+	transition: 0.5s;
+}
+
+.card .back:before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 50%;
+	height: 100%;
+	background: rgba(255, 255, 255, 0.1);
+}
+
+.card:hover .back {
+	transform: rotateX(0deg);	
+}
+
+.card .back .details {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	width: 100%;
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+}
+
+.card .back .details h2 {
+	margin: 0;
+	padding: 0;
+	font-size: 24px;
+	color: #fff;
+}
+
+.card .back .details h2 span {
+	color: #a7a7a7;
+	font-size: 16px;
+}
+
+.social-icons {
+	padding: 0;
+}
+
+.social-icons a {
+	display: inline-block;
+	width: 160px;
+	height: 3.5vw;
+	text-align: center;
+	color: #fff;
+	text-decoration: none;
+	transition: 0.5s;
+
+}
+
+.social-icons a .fa {
+	line-height: 36px;
+}
+
+.social-icons a:hover {
+	background: #9c2829;
+}
+
+.s-i {
+	color: #fff;
+    padding: 2vw 0 2vw 0;
+}
+
+.btn {
+	background: linear-gradient(90deg, #7ebd0e, #fdfdfe, #ffeb3b, #03a9f4);
+	background-size: 400%;
+	border:none;
+	height: 45px;
+	outline: none;
+	color: #540808;
+	font-size: 15px;
+	font-family: "qanelas";
+	cursor:pointer;
+	border-radius: 10px;
+	z-index: -1;
+	padding: 0 20px;
+}
+
+/*Bebidas
+
+#bebida {
+    width: 10%;
+    left: 45%;
+    top: 200%;
+    position: absolute;
+}
+
+#beber {
+	height: 118vw;
+}
+
+#bebida1{
+	top: 240%;
+	left: 20%;
+}
+#bebida2{
+	top: 240%;
+	left: 40%;
+}
+#bebida3{
+	top: 240%;
+	left: 60%;
+}
+#bebida4{
+	top: 240%;
+	left: 80%;
+}
+#bebida5{
+	top: 295%;
+	left: 60%;
+}
+#bebida6{
+	top: 295%;
+	left: 40%;
+}*/
+@media screen and (min-width: 1440px) {
+	#titulo {
+	}
+	#salgados {
+	}
+	#card1, #card2, #card3, #card4 {
+	}
+	#card5, #card6, #card7, #card8 {
+	}
+	#bebida1, #bebida2, #bebida3, #bebida4 {
+	}
+	#bebida5, #bebida6 {
+	}
+	#bebida {
+	}
+}
